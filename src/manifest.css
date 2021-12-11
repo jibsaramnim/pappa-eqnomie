@@ -1,0 +1,116 @@
+body
+{
+	color				: #990000;
+	background-color	: #EEE4D6;
+	font-family			: Arial;
+	font-size			: 10pt;
+}
+
+a:link,a:active, a:visited { color: #3C0000; font-family: Arial; font-size: 10pt; text-decoration: none; }
+a:hover { color: #990000; font-family: Arial; font-size: 10pt; text-decoration: underline; }
+
+.title
+{
+	color				: #990000;
+	font-family			: Verdana;
+	font-size			: 34pt;
+	font-weight			: bold;
+}
+
+.message
+{
+	color				: #990000;
+	font-family			: Arial;
+	font-size			: 10pt;
+	text-indent			: 1in;
+}
+
+table,td,tr
+{
+	color				: #990000;
+	background-color	: #EEE4D6;
+	font-family			: Arial;
+	font-size			: 10pt;
+	border-color		: #3C0000;
+	border-top-width	: 1px;
+	border-bottom-width	: 1px;
+	border-left-width	: 1px;
+	border-right-width	: 1px;
+	border-collapse		: collapse;
+}
+
+.text_wrong
+{
+	color				: #ffffff;
+	background-color	: #990000;
+	font-family			: Arial;
+	font-size			: 8pt;
+	border-color		: #3C0000;
+	border-top-width	: 1px;
+	border-bottom-width	: 1px;
+	border-left-width	: 1px;
+	border-right-width	: 1px;
+	width				: 200px;
+	height				: 18px;
+}
+
+.text_good
+{
+	color				: #000000;
+	background-color	: #ffffff;
+	font-family			: Arial;
+	font-size			: 8pt;
+	border-color		: #3C0000;
+	border-top-width	: 1px;
+	border-bottom-width	: 1px;
+	border-left-width	: 1px;
+	border-right-width	: 1px;
+	width				: 200px;
+	height				: 18px;
+}
+
+.textarea_wrong
+{
+	color				: #ffffff;
+	background-color	: #990000;
+	font-family			: Arial;
+	font-size			: 8pt;
+	border-color		: #3C0000;
+	border-top-width	: 1px;
+	border-bottom-width	: 1px;
+	border-left-width	: 1px;
+	border-right-width	: 1px;
+	width				: 200px;
+	height				: 150px;
+}
+
+.textarea_good
+{
+	color				: #000000;
+	background-color	: #ffffff;
+	font-family			: Arial;
+	font-size			: 8pt;
+	border-color		: #3C0000;
+	border-top-width	: 1px;
+	border-bottom-width	: 1px;
+	border-left-width	: 1px;
+	border-right-width	: 1px;
+	width				: 200px;
+	height				: 150px;
+}
+
+.button
+{
+	color				: #ffffff;
+	background-color	: #990000;
+	font-family			: Arial;
+	font-size			: 8pt;
+	border-color		: #3C0000;
+	border-top-width	: 1px;
+	border-bottom-width	: 1px;
+	border-left-width	: 1px;
+	border-right-width	: 1px;
+	width				: 98px;
+	height				: 18px;
+	cursor				: hand;
+}

@@ -1,0 +1,211 @@
+<tr>
+				<td style="border-left:1px solid #D7C1A2; background-color: #EEE4D6; border-bottom-width: 1px; border-top-width: 1px; border-right-width: 1px; border-top-style:solid; border-right-style:solid; border-bottom-style:solid" align="center">&nbsp;
+				
+				<?
+				$selectedroot = 2; //1 is private, 2 is other
+				
+				if($selectedroot == 1)
+					{
+					$theroot = "C:/inetpub/websites/elanManager";
+					}
+				elseif($selectedroot == 2)
+					{
+					$theroot = $DOCUMENT_ROOT;
+					}
+				elseif($selectedroot == 3)
+					{
+					$theroot = "";
+					}
+				
+				/* begin reading subfolders, if requested */
+				global $theroot;
+
+				function read_folder($map)
+					{
+					chdir($map);
+					$openmap = opendir($map); 
+
+					while($item = readdir($openmap)) 
+      					{
+						$files[] = $item;
+						}
+
+   					closedir($openmap);
+					
+					$started = 0;
+					for($i=0;$i < count($files); $i++)
+						{
+						$tester = substr($files[$i], 0, 1);
+						if($files[$i] != "." && $files[$i] != ".." && $tester != "_")
+							{							
+							if($started == 0)
+								{
+								global $spage;
+								$files[$i] = str_replace(".html", "", $files[$i]);
+								
+								if($spage == $files[$i])
+									{
+									global $page;
+									global $spage;
+								
+									echo "<b><font style=\"text-transform: capitalize;\">";
+									$files[$i] = str_replace("_", " ", $files[$i]);
+									echo "$files[$i]</font></b>";
+									$started = 1;
+									}
+								else
+									{
+									global $page;
+									global $spage;
+
+									echo "<a href=\"$PHP_SELF?page=$page"."&spage=".$files[$i]."\" style=\"text-transform: capitalize;\">";
+									$files[$i] = str_replace("_", " ", $files[$i]);
+									echo "$files[$i]</a>";
+									$started = 1;
+									}
+								}
+							else
+								{
+								$files[$i] = str_replace(".html", "", $files[$i]);
+								
+								if($spage == $files[$i])
+									{
+									global $page;
+									global $spage;
+									$files[$i] = str_replace(".html", "", $files[$i]);
+									echo " - <b><font style=\"text-transform: capitalize;\">";
+									$files[$i] = str_replace("_", " ", $files[$i]);
+
+									echo "$files[$i]</font></b>";
+									}
+								else
+									{
+									global $page;
+									global $spage;
+									$files[$i] = str_replace(".html", "", $files[$i]);
+									echo " - <a href=\"$PHP_SELF?page=$page&spage=$files[$i]\" style=\"text-transform: capitalize;\">";
+									$files[$i] = str_replace("_", " ", $files[$i]);
+
+									echo "$files[$i]</a>";
+									}
+								}
+							}
+        				}
+					}
+				
+				if(@$page)
+					{
+					read_folder($theroot . "/content/" . $page);
+					}
+				?>
+				
+				</td>
+			</tr>
+			
+---
+
+<table border="1" style="border-collapse: collapse; border-bottom-width: 0px" width="100%" cellspacing="0" height="20" bordercolor="#D7C1A2" id="table4" cellpadding="1">
+			<tr>
+				<td class="ctext" style="border-bottom-style: none; border-bottom-width: medium" align="center">&nbsp;
+				
+				<?
+				$selectedroot = 2; //1 is private, 2 is other
+				
+				if($selectedroot == 1)
+					{
+					$theroot = "C:/inetpub/websites/elanManager";
+					}
+				elseif($selectedroot == 2)
+					{
+					$theroot = $DOCUMENT_ROOT;
+					}
+				elseif($selectedroot == 3)
+					{
+					$theroot = "";
+					}
+				
+				/* begin reading subfolders, if requested */
+				global $theroot;
+
+				function read_folder($map)
+					{
+					chdir($map);
+					$openmap = opendir($map); 
+
+					while($item = readdir($openmap)) 
+      					{
+						$files[] = $item;
+						}
+
+   					closedir($openmap);
+					
+					$started = 0;
+					for($i=0;$i < count($files); $i++)
+						{
+						$tester = substr($files[$i], 0, 1);
+						if($files[$i] != "." && $files[$i] != ".." && $tester != "_")
+							{							
+							if($started == 0)
+								{
+								echo "Subkeuze: &nbsp;";
+								global $spage;
+								$files[$i] = str_replace(".html", "", $files[$i]);
+								
+								if($spage == $files[$i])
+									{
+									global $page;
+									global $spage;
+								
+									echo "<b><font style=\"text-transform: capitalize;\">";
+									$files[$i] = str_replace("_", " ", $files[$i]);
+									echo "$files[$i]</font></b>";
+									$started = 1;
+									}
+								else
+									{
+									global $page;
+									global $spage;
+
+									echo "<a href=\"$PHP_SELF?page=$page"."&spage=".$files[$i]."\" style=\"text-transform: capitalize;\">";
+									$files[$i] = str_replace("_", " ", $files[$i]);
+									echo "$files[$i]</a>";
+									$started = 1;
+									}
+								}
+							else
+								{
+								$files[$i] = str_replace(".html", "", $files[$i]);
+								
+								if($spage == $files[$i])
+									{
+									global $page;
+									global $spage;
+									$files[$i] = str_replace(".html", "", $files[$i]);
+									echo " - <b><font style=\"text-transform: capitalize;\">";
+									$files[$i] = str_replace("_", " ", $files[$i]);
+
+									echo "$files[$i]</font></b>";
+									}
+								else
+									{
+									global $page;
+									global $spage;
+									$files[$i] = str_replace(".html", "", $files[$i]);
+									echo " - <a href=\"$PHP_SELF?page=$page&spage=$files[$i]\" style=\"text-transform: capitalize;\">";
+									$files[$i] = str_replace("_", " ", $files[$i]);
+
+									echo "$files[$i]</a>";
+									}
+								}
+							}
+        				}
+					}
+				
+				if(@$page)
+					{
+					read_folder($theroot . "/content/" . $page);
+					}
+				?>
+				</td>
+			</tr>
+		</table>

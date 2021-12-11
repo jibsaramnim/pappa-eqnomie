@@ -1,0 +1,149 @@
+body
+{
+	scrollbar-face-color		: #EEE4D6;
+	scrollbar-shadow-color		: #000000; 
+	scrollbar-highlight-color	: #000000; 
+	scrollbar-3dlight-color		: #FFF6E5; 
+	scrollbar-darkshadow-color	: #FFF6E5; 
+	scrollbar-track-color		: #FFF6E5; 
+	scrollbar-arrow-color		: #000000;
+	background-color			: #FFF6E5;
+	font						: 10pt Verdana;
+	margin-top					: 0;
+	margin-left					: 0;
+	margin-right				: 0;
+	margin-bottom				: 0;
+};
+
+td,tr
+{
+	background-color			: #FFF6E5;
+	font						: 10pt Verdana;
+	border-color				: #D7C1A2;
+};
+
+td.ctext
+{
+	background-color			: #EEE4D6;
+	font						: 10pt Verdana;
+	border-color				: #D7C1A2;
+};
+
+table
+{
+	background-color			: #EEE4D6;
+	font						: 10pt Verdana;
+	border-color				: #D7C1A2;
+	border-top-width			: 1px;
+	border-bottom-width			: 1px;
+	border-left-width			: 1px;
+	border-right-width			: 1px;
+};
+
+a:link 		{ color: #990000; text-decoration: none};
+a:visited 	{ color: #990000; text-decoration: none};
+a:active 	{ color: #990000; text-decoration: none};
+a:hover 	{ color: #000000; text-decoration: underline};
+
+.smalltext01
+{
+	font-family			: Arial; 
+	font-size			: 8pt;
+	color				: #000000;
+};
+
+.textfield01
+{
+	font-family			: Arial; 
+	font-size			: 8pt;
+	text-align			: left;
+	color				: #000000; 
+	background-color	: #CBD4DB; 
+	border				: #555555; 
+	border-style		: solid; 
+	border-top-width	: 1px; 
+	border-bottom-width	: 1px; 
+	border-right-width	: 1px; 
+	border-left-width	: 1px;
+	width				: 250px;
+	cursor				: text;
+};
+
+.textfield02
+{
+	font-family			: Arial; 
+	font-size			: 8pt;
+	text-align			: center;
+	color				: #ffffff; 
+	background-color	: #990000; 
+	border				: #555555; 
+	border-style		: solid; 
+	border-top-width	: 1px; 
+	border-bottom-width	: 1px; 
+	border-right-width	: 1px; 
+	border-left-width	: 1px;
+	width				: 200px;
+	cursor				: text;
+};
+
+
+.man_table
+{
+	color				: #990000;
+	background-color	: #EEE4D6;
+	font-family			: Arial;
+	font-size			: 10pt;
+	border-color		: #3C0000;
+	border-top-width	: 1px;
+	border-bottom-width	: 1px;
+	border-left-width	: 1px;
+	border-right-width	: 1px;
+	border-collapse		: collapse;
+}
+
+.text
+{
+	color				: #000000;
+	background-color	: #ffffff;
+	font-family			: Arial;
+	font-size			: 8pt;
+	border-color		: #3C0000;
+	border-top-width	: 1px;
+	border-bottom-width	: 1px;
+	border-left-width	: 1px;
+	border-right-width	: 1px;
+	width				: 200px;
+	height				: 18px;
+}
+
+.textarea
+{
+	color				: #000000;
+	background-color	: #ffffff;
+	font-family			: Arial;
+	font-size			: 8pt;
+	border-color		: #3C0000;
+	border-top-width	: 1px;
+	border-bottom-width	: 1px;
+	border-left-width	: 1px;
+	border-right-width	: 1px;
+	width				: 200px;
+	height				: 150px;
+}
+
+.button
+{
+
+	color				: #ffffff;
+	background-color	: #990000;
+	font-family			: Arial;
+	font-size			: 8pt;
+	border-color		: #3C0000;
+	border-top-width	: 1px;
+	border-bottom-width	: 1px;
+	border-left-width	: 1px;
+	border-right-width	: 1px;
+	width				: 98px;
+	height				: 18px;
+	cursor				: hand;
+}

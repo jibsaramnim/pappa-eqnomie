@@ -1,0 +1,4 @@
+AuthType Basic
+AuthUserFile /home/.sites/137/site24/web/list/.htpasswd
+AuthName "SECURE"
+require valid-user
